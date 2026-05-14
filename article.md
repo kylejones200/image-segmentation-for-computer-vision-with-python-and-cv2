@@ -15,7 +15,7 @@ Image Segmentation is a fundamental task in computer vision and is used in many 
 
 This project assumes that you already have a background in computer vision. If you are looking for something simplier, check out my intro to computer vision article.
 
-[**Introduction to Deep Learning for computer vision with Python**\ *Deep learning has achieved significant breakthroughs in a wide range of applications, including image and speech...*medium.com](https://medium.com/@kylejones_47003/introduction-to-deep-learning-for-computer-vision-with-python-85f94acc3a6b "https://medium.com/@kylejones_47003/introduction-to-deep-learning-for-computer-vision-with-python-85f94acc3a6b")[](https://medium.com/@kylejones_47003/introduction-to-deep-learning-for-computer-vision-with-python-85f94acc3a6b) There are various techniques for image segmentation, including thresholding, edge detection, and clustering. Thresholding involves setting a threshold value and separating pixels based on their intensity values. Edge detection involves detecting the edges or boundaries between regions in an image. Clustering involves grouping pixels based on their similarity in color, texture, or other features.
+[Introduction to Deep Learning for computer vision with Python\ *Deep learning has achieved significant breakthroughs in a wide range of applications, including image and speech...*medium.com](https://medium.com/@kylejones_47003/introduction-to-deep-learning-for-computer-vision-with-python-85f94acc3a6b "https://medium.com/@kylejones_47003/introduction-to-deep-learning-for-computer-vision-with-python-85f94acc3a6b")[](https://medium.com/@kylejones_47003/introduction-to-deep-learning-for-computer-vision-with-python-85f94acc3a6b) There are various techniques for image segmentation, including thresholding, edge detection, and clustering. Thresholding involves setting a threshold value and separating pixels based on their intensity values. Edge detection involves detecting the edges or boundaries between regions in an image. Clustering involves grouping pixels based on their similarity in color, texture, or other features.
 
 Once an image has been segmented, it is often possible to extract useful information from each region. For example, we may want to measure the size, shape, or color of each object in an image. This information can then be used for various purposes, such as identifying objects in a scene or detecting abnormalities in medical images.
 
@@ -24,43 +24,43 @@ Overall, image segmentation is an essential task in computer vision that allows 
 #### Forms of Image Segmentation
 There are two main forms of image segmentation:
 
-**Semantic segmentation:** Semantic segmentation is the process of labeling each pixel in an image with a class label, such as object, background, or boundary. The goal of semantic segmentation is to assign a meaningful label to each pixel in the image, based on its context and surrounding pixels. This is useful for various applications, such as object detection, scene understanding, and autonomous driving.
+Semantic segmentation: Semantic segmentation is the process of labeling each pixel in an image with a class label, such as object, background, or boundary. The goal of semantic segmentation is to assign a meaningful label to each pixel in the image, based on its context and surrounding pixels. This is useful for various applications, such as object detection, scene understanding, and autonomous driving.
 
-**Instance segmentation:** Instance segmentation is the process of separating each individual object instance in an image and assigning a unique label to it. Unlike semantic segmentation, instance segmentation differentiates between multiple instances of the same object class, such as identifying each person in a crowd. This is useful for applications such as robotics, where individual object instances need to be identified and tracked.
+Instance segmentation: Instance segmentation is the process of separating each individual object instance in an image and assigning a unique label to it. Unlike semantic segmentation, instance segmentation differentiates between multiple instances of the same object class, such as identifying each person in a crowd. This is useful for applications such as robotics, where individual object instances need to be identified and tracked.
 
-In other words, **local segmentation** and **global segmentation** are two different approaches to image segmentation that vary in the scope of the segmentation.
+In other words, local segmentation and global segmentation are two different approaches to image segmentation that vary in the scope of the segmentation.
 
-**Local segmentation** is the process of segmenting an image into regions based on local image features such as texture, color, or intensity. This means that the segmentation is performed on small, localized regions of the image, without taking into account the larger context of the image. Local segmentation is useful for applications such as object recognition, where local image features are often more informative than global features.
+Local segmentation is the process of segmenting an image into regions based on local image features such as texture, color, or intensity. This means that the segmentation is performed on small, localized regions of the image, without taking into account the larger context of the image. Local segmentation is useful for applications such as object recognition, where local image features are often more informative than global features.
 
-**Global segmentation**, on the other hand, is the process of segmenting an image into regions based on the overall context and structure of the image. This means that the segmentation is performed on the entire image as a whole, taking into account the relationships between different parts of the image. Global segmentation is useful for applications such as scene understanding, where the overall structure of the scene is important.
+Global segmentation, on the other hand, is the process of segmenting an image into regions based on the overall context and structure of the image. This means that the segmentation is performed on the entire image as a whole, taking into account the relationships between different parts of the image. Global segmentation is useful for applications such as scene understanding, where the overall structure of the scene is important.
 
 Both local and global segmentation have their own strengths and weaknesses, and the choice of which approach to use depends on the specific application and the characteristics of the images being segmented. In some cases, a combination of both approaches may be used to achieve the best results.
 
 #### Types of Image Segmentation Techniques
 There are several types of image segmentation techniques, some of which are listed below:
 
-**Thresholding:** This is a simple image segmentation technique that involves separating pixels based on their intensity values. A threshold value is set, and pixels above or below the threshold are segmented into different regions.
+Thresholding: This is a simple image segmentation technique that involves separating pixels based on their intensity values. A threshold value is set, and pixels above or below the threshold are segmented into different regions.
 
-**Edge-based segmentation:** This technique involves detecting the edges or boundaries between different regions in an image. The edges can be detected using various algorithms, such as the Sobel, Canny, or Laplacian edge detection algorithms.
+Edge-based segmentation: This technique involves detecting the edges or boundaries between different regions in an image. The edges can be detected using various algorithms, such as the Sobel, Canny, or Laplacian edge detection algorithms.
 
-**Region-growing segmentation:** This technique involves starting with an initial seed pixel and growing the region by including neighboring pixels that have similar properties, such as intensity or color.
+Region-growing segmentation: This technique involves starting with an initial seed pixel and growing the region by including neighboring pixels that have similar properties, such as intensity or color.
 
-**Clustering-based segmentation:** This technique involves grouping pixels into clusters based on their similarity in color, texture, or other features. The most common clustering algorithm used for image segmentation is the k-means algorithm.
+Clustering-based segmentation: This technique involves grouping pixels into clusters based on their similarity in color, texture, or other features. The most common clustering algorithm used for image segmentation is the k-means algorithm.
 
-**Watershed segmentation:** This technique involves treating an image as a topographic map and simulating the flooding of the landscape. Watersheds, or areas of high elevation, are separated by ridges, or areas of low elevation.
+Watershed segmentation: This technique involves treating an image as a topographic map and simulating the flooding of the landscape. Watersheds, or areas of high elevation, are separated by ridges, or areas of low elevation.
 
-**Graph-based segmentation:** This technique involves representing an image as a graph, where each pixel is a node and the edges represent the similarity between neighboring pixels. The graph is then partitioned into different regions using various algorithms, such as the normalized cuts algorithm.
+Graph-based segmentation: This technique involves representing an image as a graph, where each pixel is a node and the edges represent the similarity between neighboring pixels. The graph is then partitioned into different regions using various algorithms, such as the normalized cuts algorithm.
 
 These are just a few examples of the many techniques available for image segmentation. The choice of which technique to use depends on the specific application and the characteristics of the images being segmented.
 
 #### Thresholding
 There are several different thresholding techniques that can be used, depending on the characteristics of the image being segmented. The most common thresholding techniques are:
 
-**Global thresholding:** This involves setting a single threshold value for the entire image. Pixels with intensity values above the threshold are segmented as foreground, while pixels with intensity values below the threshold are segmented as background.
+Global thresholding: This involves setting a single threshold value for the entire image. Pixels with intensity values above the threshold are segmented as foreground, while pixels with intensity values below the threshold are segmented as background.
 
-**Adaptive thresholding:** This technique is useful when the lighting conditions in an image vary significantly. Adaptive thresholding involves calculating a threshold value for each pixel based on the local image intensity values. This can result in more accurate segmentation of the foreground and background regions.
+Adaptive thresholding: This technique is useful when the lighting conditions in an image vary significantly. Adaptive thresholding involves calculating a threshold value for each pixel based on the local image intensity values. This can result in more accurate segmentation of the foreground and background regions.
 
-**Otsu's thresholding:** This technique involves finding an optimal threshold value that maximizes the separation between foreground and background pixels. This is achieved by minimizing the intra-class variance of the intensity values for each class.
+Otsu's thresholding: This technique involves finding an optimal threshold value that maximizes the separation between foreground and background pixels. This is achieved by minimizing the intra-class variance of the intensity values for each class.
 
 Thresholding is a simple but effective technique that can be used for a wide range of applications, such as object detection, image analysis, and image processing. However, it can be sensitive to variations in lighting conditions and may not be suitable for images with complex or variable backgrounds.
 
@@ -113,15 +113,15 @@ The basic Thresholding technique is Binary Thresholding. For every pixel, the sa
 
 The different Simple Thresholding Techniques are:
 
-**cv2.THRESH_BINARY:** If pixel intensity is greater than the set threshold, value set to 255, else set to 0 (black).
+cv2.THRESH_BINARY: If pixel intensity is greater than the set threshold, value set to 255, else set to 0 (black).
 
-**cv2.THRESH_BINARY_INV:** Inverted or Opposite case of cv2.THRESH_BINARY.
+cv2.THRESH_BINARY_INV: Inverted or Opposite case of cv2.THRESH_BINARY.
 
-**cv.THRESH_TRUNC:** If pixel intensity value is greater than threshold, it is truncated to the threshold. The pixel values are set to be the same as the threshold. All other values remain the same.
+cv.THRESH_TRUNC: If pixel intensity value is greater than threshold, it is truncated to the threshold. The pixel values are set to be the same as the threshold. All other values remain the same.
 
-**cv.THRESH_TOZERO:** Pixel intensity is set to 0, for all the pixels intensity, less than the threshold value.
+cv.THRESH_TOZERO: Pixel intensity is set to 0, for all the pixels intensity, less than the threshold value.
 
-**cv.THRESH_TOZERO_INV:** Inverted or Opposite case of cv2.THRESH_TOZERO.
+cv.THRESH_TOZERO_INV: Inverted or Opposite case of cv2.THRESH_TOZERO.
 
 ```python
 import cv2
@@ -199,15 +199,15 @@ plt.show()
 <figcaption>Adaptive thresholding examples using OpenCV. Source: Author.</figcaption>
 
 
-**cv2.ADAPTIVE_THRESH_MEAN_C:** Threshold Value = (Mean of the neighborhood area values --- constant value). In other words, it is the mean of the blockSize×blockSize neighborhood of a point minus constant.
+cv2.ADAPTIVE_THRESH_MEAN_C: Threshold Value = (Mean of the neighborhood area values --- constant value). In other words, it is the mean of the blockSize×blockSize neighborhood of a point minus constant.
 
-**cv2.ADAPTIVE_THRESH_GAUSSIAN_C:** Threshold Value = (Gaussian-weighted sum of the neighborhood values --- constant value). In other words, it is a weighted sum of the blockSize×blockSize neighborhood of a point minus constant.
+cv2.ADAPTIVE_THRESH_GAUSSIAN_C: Threshold Value = (Gaussian-weighted sum of the neighborhood values --- constant value). In other words, it is a weighted sum of the blockSize×blockSize neighborhood of a point minus constant.
 
-**thresholdType:** The type of thresholding to be applied.
+thresholdType: The type of thresholding to be applied.
 
-**blockSize:** Size of a pixel neighborhood that is used to calculate a threshold value.
+blockSize: Size of a pixel neighborhood that is used to calculate a threshold value.
 
-**constant:** A constant value that is subtracted from the mean or weighted sum of the neighborhood pixels.
+constant: A constant value that is subtracted from the mean or weighted sum of the neighborhood pixels.
 
 We applied adaptive thresholding using the cv2.adaptiveThreshold() function, which takes in the input image, the maximum value (255 in this case), the adaptive thresholding method (cv2.ADAPTIVE_THRESH_MEAN_C in this case, which computes the threshold value as the mean of the surrounding pixel values), the thresholding type (cv2.THRESH_BINARY in this case), the block size (11 in this case, which is the size of the local neighborhood around each pixel used for computing the threshold value), and a constant value subtracted from the mean (2 in this case). The function returns the thresholded image.
 
@@ -265,28 +265,28 @@ plt.show()
 ```
 
 
-**Syntax:** cv2.threshold(source, thresholdValue, maxVal, thresholdingTechnique)
+Syntax: cv2.threshold(source, thresholdValue, maxVal, thresholdingTechnique)
 
 Parameters:
 
-**source:** Input Image array (must be in Grayscale).
+source: Input Image array (must be in Grayscale).
 
-**thresholdValue:** Value of Threshold below and above which pixel values will change accordingly.
+thresholdValue: Value of Threshold below and above which pixel values will change accordingly.
 
-**maxVal:** Maximum value that can be assigned to a pixel.
+maxVal: Maximum value that can be assigned to a pixel.
 
-**thresholdingTechnique:** The type of thresholding to be applied.
+thresholdingTechnique: The type of thresholding to be applied.
 
 ### Edge-based segmentation
 It is a technique in which image regions are segmented based on edges, or boundaries, in the image. The basic idea behind edge-based segmentation is that the boundaries between different regions in an image are typically characterized by sharp changes in intensity, color, or texture. By detecting these boundaries, it is possible to segment an image into different regions.
 
 Canny, Sobel, and Laplacian are popular algorithms for edge detection in computer vision and image processing. Here's a brief explanation of when and why each algorithm is used:
 
-**Canny Edge Detection:** The Canny edge detector is a multi-stage algorithm that is known for its high accuracy and low error rate. It is often used in applications where precise detection of edges is required, such as in object recognition, tracking, and segmentation. The Canny algorithm is computationally expensive, but its accuracy and low error rate make it an excellent choice for high-precision applications.
+Canny Edge Detection: The Canny edge detector is a multi-stage algorithm that is known for its high accuracy and low error rate. It is often used in applications where precise detection of edges is required, such as in object recognition, tracking, and segmentation. The Canny algorithm is computationally expensive, but its accuracy and low error rate make it an excellent choice for high-precision applications.
 
-**Sobel Edge Detection:** The Sobel operator is a simple algorithm for detecting edges in an image. It calculates the gradient of the image intensity in the x and y directions, which can be combined to produce the edge magnitude and orientation. The Sobel algorithm is computationally efficient and can be used in real-time applications such as video processing and robotics.
+Sobel Edge Detection: The Sobel operator is a simple algorithm for detecting edges in an image. It calculates the gradient of the image intensity in the x and y directions, which can be combined to produce the edge magnitude and orientation. The Sobel algorithm is computationally efficient and can be used in real-time applications such as video processing and robotics.
 
-**Laplacian Edge Detection:** The Laplacian operator is another popular algorithm for edge detection. Unlike the Sobel and Canny algorithms, the Laplacian operator is a second-order differential operator that detects edges based on the zero-crossings of the second derivative of the image intensity function. The Laplacian operator is sensitive to noise, and its results may require additional filtering or processing to obtain accurate edge detection.
+Laplacian Edge Detection: The Laplacian operator is another popular algorithm for edge detection. Unlike the Sobel and Canny algorithms, the Laplacian operator is a second-order differential operator that detects edges based on the zero-crossings of the second derivative of the image intensity function. The Laplacian operator is sensitive to noise, and its results may require additional filtering or processing to obtain accurate edge detection.
 
 In summary, the choice of edge detection algorithm depends on the specific application requirements, including the desired accuracy, speed, and computational resources. The Canny algorithm is an excellent choice for high-precision applications, while the Sobel algorithm is faster and suitable for real-time applications. The Laplacian algorithm is less commonly used due to its sensitivity to noise, but it can be effective when combined with additional filtering or processing.
 
@@ -324,9 +324,9 @@ plt.show()
 <figcaption>Canny edge image using cv2. Source: Author.</figcaption>
 
 
-We applied **Gaussian smoothing** using the \`cv2.GaussianBlur()\` function to remove noise from the image. Then, we applied Canny edge detection using the \`cv2.Canny()\` function with lower and upper threshold values of 100 and 200, respectively.
+We applied Gaussian smoothing using the \`cv2.GaussianBlur()\` function to remove noise from the image. Then, we applied Canny edge detection using the \`cv2.Canny()\` function with lower and upper threshold values of 100 and 200, respectively.
 
-#### **Sobel Edge Detector**
+#### Sobel Edge Detector
 The Sobel operator is a widely used algorithm for edge detection. It works by calculating the gradient of the image intensity function, which highlights areas of the image with high intensity changes.
 
 Here's an example of how to use the Sobel operator for edge detection in OpenCV using Python:
@@ -363,7 +363,7 @@ plt.show()
 <figcaption>Sobel edge image using cv2. Source: Author.</figcaption>
 
 
-We applied the **Sobel operator** using the \`cv2.Sobel()\` function, specifying the direction of the gradient as either horizontal (x) or vertical (y) by setting the appropriate arguments to 1 and 0, respectively. The ksize argument specifies the size of the Sobel kernel.
+We applied the Sobel operator using the \`cv2.Sobel()\` function, specifying the direction of the gradient as either horizontal (x) or vertical (y) by setting the appropriate arguments to 1 and 0, respectively. The ksize argument specifies the size of the Sobel kernel.
 
 We then combined the x and y gradients using the \`cv2.addWeighted()\` function, with equal weighting for each gradient.
 
@@ -402,13 +402,13 @@ plt.show()
 <figcaption>Laplacian edge image using cv2. Source: Author.</figcaption>
 
 
-We applied the **Laplacian operator** using \`cv2.Laplacian()\`. The second argument, cv2.CV_64F, specifies the data type of the output image, which in this case is a 64-bit floating-point number.
+We applied the Laplacian operator using \`cv2.Laplacian()\`. The second argument, cv2.CV_64F, specifies the data type of the output image, which in this case is a 64-bit floating-point number.
 
 Since the output image is in floating-point format, we need to convert it to uint8 format before displaying it. We use \`cv2.convertScaleAbs()\` for this purpose, which performs an absolute value operation followed by a scaling operation to convert the data type.
 
 In the same way, there are other segmentation techniques that can be used according to the requirements.
 
-[**Object Detection with Python using OpenCV: Introduction to computer vision**\ *Object detection is a computer vision task that involves detecting and localizing objects within an image. This task is...*medium.com](https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d "https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d")[](https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d)
+[Object Detection with Python using OpenCV: Introduction to computer vision\ *Object detection is a computer vision task that involves detecting and localizing objects within an image. This task is...*medium.com](https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d "https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d")[](https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d)
 ### Related Stories
 - [[Intro to Computer Vision with OpenCV in Python](https://medium.com/@kylejones_47003/intro-to-computer-vision-with-opencv-in-python-628eb9fca2db)]
 - [[Object Detection with Python using OpenCV: Introduction to computer vision](https://medium.com/@kylejones_47003/object-detection-with-python-using-open-cv-introduction-to-computer-vision-74508c39191d)]
